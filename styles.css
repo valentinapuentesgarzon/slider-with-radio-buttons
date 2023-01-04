@@ -1,0 +1,149 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background: black;
+}
+
+
+/* estilos de los contenedores */
+
+.box{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	box-shadow: 0px 0px 80px 0px rgba(78, 76, 76, 0.418);
+	border-radius: 10px;
+
+}
+
+.center {
+	position: absolute;
+    text-align: center;
+    overflow: hidden;
+	width: 500px;
+	height: 500px;
+	top: 0;
+	left: 0;
+    border-radius: 10px;
+}
+
+/* posición de los círculos */
+
+.circle {
+	width: 60px;
+	height: 60px;
+	border: 2px solid white;
+	box-sizing: border-box;
+	border-radius: 50%;
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	z-index: 5;
+	cursor: pointer;
+}
+
+#C2 {
+	left: 230px;
+}
+
+#C3 {
+	left: 310px;
+}
+
+/* posicionamiento del selector */
+
+.selector {
+	width: 40px;
+	height: 40px;
+	border: 20px solid white;
+	border-radius: 50%;
+	position: absolute;
+	top: 42%;
+	left: 32%;
+	transition: all 1s ease;
+	z-index: 10;
+}
+
+/* Condición del selector: se mueve en los tres circulos acorde al check */
+
+#check1:checked ~ .selector{
+	transform: translateX(0px);
+}
+
+#check2:checked ~ .selector{
+	transform: translateX(80px);
+}
+
+#check3:checked ~ .selector{
+	transform: translateX(160px);
+}
+
+/*BackGround color rotate*/
+
+.bg {
+	position: absolute;
+	width: 1500px;
+	height: 500px;
+	top: 0;
+	left: 0;
+	background: #3498db;
+	border-left: 500px solid #b6b059;
+	border-right: 500px solid #bc4d1a;
+	transition: all 1s ease-in-out;
+	transform: translate(0px);
+}
+
+#check1:checked ~ .bg{
+	transform: translateX(0px);
+}
+
+#check2:checked ~ .bg{
+	transform: translateX(-500px);
+}
+
+#check3:checked ~ .bg{
+	transform: translateX(-1000px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
